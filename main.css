@@ -1,1 +1,70 @@
 
+header{
+    background-color: #333;
+    width: 100%;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+header h1{
+    color: white;
+    font-size: 30px;
+    font-family: 'Source Code Pro', monospace;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* justify-content: flex-start; */
+}
+
+@media (min-width : 1194px){
+    .topnav a{
+        width: 100px;
+    }
+}
+
+@media (max-width : 1353px) and (min-width : 1193px){
+    .topnav a{
+        width: 200px;
+    }
+}
+
+@media (max-width : 1192px) and (min-width : 825px){
+    .topnav a{
+        width: 355px;
+    }
+}
+
+@media (max-width : 824px){
+    .topnav a{
+        width: 232px;
+    }
+}
+
+.topnav a {
+    flex-grow: 1;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+}
