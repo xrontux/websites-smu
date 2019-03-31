@@ -1,6 +1,5 @@
-
 header{
-    background-color: #333;
+    background-color: #2A3166;
     text-align: center;
     padding-top: 30px;
     padding-bottom: 30px;
@@ -9,7 +8,7 @@ header{
 }
 
 header h1{
-    color: white;
+    color:#EE7879;
     font-size: 30px;
     font-family: 'Source Code Pro', monospace;
     margin-top: 0px;
@@ -18,11 +17,14 @@ header h1{
 
 .topnav {
     overflow: hidden;
-    background-color: #333;
+    background-color:#CAE7DF;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     /* justify-content: flex-start; */
+    position: sticky;
+    top: 0px;
+    z-index: 10;
 }
 
 @media (min-width : 1194px){
@@ -51,37 +53,320 @@ header h1{
 
 .topnav a {
     flex-grow: 1;
-    color: #f2f2f2;
+    color: #2A3166;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
+
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Source Code Pro', monospace;
 }
 
 .topnav a:hover {
-    background-color: #ddd;
-    color: black;
+    background-color:#F4ABAA;
+    color: #2A3166;
 }
 
 .topnav a.active {
-    background-color: #4CAF50;
-    color: white;
-}
-
-/* #no1, #no2, #no3, #no4, #no5, #no6, #no7, #no8, #no9, #no10{
-    display: flex;
-    flex-direction: row;
-} */
-
-section{
-    display: flex;
-    flex-direction: row;
+    background-color:#F4ABAA;
+    color: #2A3166;
 }
 
 section h3{
-    flex-grow: 1;
+    font-family: 'Source Code Pro', monospace;
+
+    color: #EE7879;
+    background-color: #F4ABAA;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 section p{
-    flex-grow: 2;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+    color: #2A3166;
+    background-color: #EE7879;
+    font-size: 15px;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: bold;
+    line-height: 30px;
+    padding: 80px;
 }
+
+/*///////////First heuristic example/////////////////////*/
+
+.container {
+    background-color: #EE7879;
+    width:100%;
+    height:230px;
+    margin-left: 0;
+    margin-right: 0;
+    /* margin: 100px auto 0; */
+    padding-top: 30px;
+    padding-bottom: 110px;
+
+    font-family: 'Source Code Pro', monospace;
+    font-size: 14px;
+  }
+  
+  .row {
+    display: block;
+    width: 425px;
+    height: 70px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .btn {
+    float: left;
+    position: relative;
+    top: 0;
+    cursor: pointer;
+    background: white;
+    border-radius: 3px;
+    box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+    margin: 0 7px 11px 0;
+    color: #888;
+  
+    text-align: center;
+  
+    /* so nobody selects the inside text on button */
+    user-select: none;
+  
+    /* Smoothing out hover using css3 transitions, if not, the pressed button effect looks a bit hard */
+    transition: all 0.2s ease;
+  }
+  
+  .btn-small {
+    line-height: 36px;
+    width: 78px;
+    height: 36px;
+  }
+  
+  .btn-medium {
+    line-height: 45px;
+    width: 134px;
+    height: 45px;
+    font-size: 120%;
+  }
+  
+  .btn-large {
+    line-height: 80px;
+    width: 100%;
+    height: 85px;
+    font-size: 160%;
+  }
+  
+  /*==========  Different button styles  ==========*/
+  
+  .submit {
+    background: #b7de01;
+    box-shadow: 0px 5px #687e00;
+    color: #687e00;
+  }
+  .submit:hover {
+    background: #99ba01;
+    box-shadow: 0px 4px #435100;
+    color: #687e00;
+  }
+  /* Imitate a pressed effect for buttons */
+  .submit:active {
+    box-shadow: 0px 0px #717a33;
+    top: 4px;
+  }
+  
+  
+  .cancel {
+    background: #00ddeb;
+    box-shadow: 0px 5px #028d96;
+    color: white;
+  }
+  
+  .cancel:hover {
+    background: #01d1de;
+    box-shadow: 0px 4px #006066;
+    color: white;
+  }
+  
+  /* Imitate a pressed effect for buttons */
+  .cancel:active {
+    top: 4px;
+    box-shadow: 0px 0px #d3545d;
+  }
+  
+  .info {
+    background: #d9008f;
+    box-shadow: 0px 5px #5f023f;
+    color: white;
+  }
+  
+  .info:hover {
+    background: #b60178;
+    box-shadow: 0px 4px #3f002a;
+    color: white;
+  }
+  
+  /* Imitate a pressed effect for buttons */
+  .info:active {
+    top: 4px;
+    box-shadow: 0px 0px #d3545d;
+  }
+
+  
+/*///////////First heuristic example end/////////////////////*/
+
+/*///////////Second heuristic example/////////////////////*/
+.wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 230px;
+    background-color: #EE7879;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.progressbar{
+    height: 50px;
+    width: 380px;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: rotateX(-20deg) rotateY(-40deg);
+}
+.side{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(254,254,254,0.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.side__bottom{
+    transform: rotateX(90deg);
+    transform-origin: bottom;
+    box-shadow: 10px 5px 50px 5px rgba(0,0,0,.25);
+}
+.side__top{
+    transform: rotateX(-90deg);
+    transform-origin: top;
+}
+.side__back{
+    transform: translateZ(-50px);
+}
+
+.side__left {
+    width: 50px;
+    transform: rotateY(90deg);
+    transform-origin: left;
+    background-color: rgba(0,139,139,.5);
+}
+.side__fill{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: #CAE7DF;
+    transition: .3s all linear;
+}
+
+
+.progressbar__text{
+    display: inline-block;
+    position: relative;
+    top: -100px;
+    left: 50px;
+    font-size: 22px;
+    padding: 5px;
+    background-color: rgba(0,139,139,.5);
+    cursor: pointer;
+    margin-right: 17px;
+    font-family: Arial;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 1px -2px 0px 0px rgba(56,121,121,1), 
+                2px -2px 0px 0px rgba(56,121,121,1), 
+                3px -2px 0px 0px rgba(56,121,121,1);
+}
+.progressbar__text:last-of-type{
+    margin-right: 0;
+}
+.progressbar__checker{
+    display: none;
+}
+
+#zero:checked ~ div > .side__fill{
+    width: 0%;
+}
+#twenty-five:checked ~ div > .side__fill{
+    width: 25%;
+}
+#fifty:checked ~ div > .side__fill{
+    width: 50%;
+}
+#seventy-five:checked ~ div > .side__fill{
+    width: 75%;
+}
+#hundred:checked ~ div > .side__fill{
+    width: 100%;
+}
+
+.progressbar__checker:checked + .progressbar__text{
+    background-color: rgba(0,139,139,1);
+}
+/*///////////Second heuristic example end/////////////////////*/
+
+/*///////////Acronyms expander/////////////////////*/
+#acronyms-expander {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+    flex-direction: column;
+}
+
+.acronym {
+	font-size: 2em;
+	display: flex;
+	align-items: baseline;
+	padding: 10px 20px;
+	border-radius: 50px;
+	box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+	margin-bottom: 20px;
+	transition: all 0.15s ease-out;
+}
+
+.acronym .letter {
+	font-size: 1.1em;
+}
+
+.acronym .word {
+	max-width: 0;
+	overflow: hidden;
+	margin-right: 4px;
+	transition: max-width 0.75s ease-out;
+}
+
+.acronym:hover {
+	background-color: #11a0ff;
+	color: white;
+	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.07);
+}
+
+.acronym:hover .word {
+	max-width: 999px;
+}
+
+.acronym:hover .letter {
+	text-decoration: underline;
+}
+
+
+/*///////////Acronyms expander end/////////////////////*/
