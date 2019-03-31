@@ -67,3 +67,21 @@ header h1{
     background-color: #4CAF50;
     color: white;
 }
+
+/* #no1, #no2, #no3, #no4, #no5, #no6, #no7, #no8, #no9, #no10{
+    display: flex;
+    flex-direction: row;
+} */
+
+section{
+    display: flex;
+    flex-direction: row;
+}
+
+section h3{
+    flex-grow: 1;
+}
+
+section p{
+    flex-grow: 2;
+}

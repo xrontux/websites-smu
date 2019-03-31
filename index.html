@@ -1,15 +1,14 @@
 <!DOCTYPE html>
+
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
+    <title>Nielson's Heuristics</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css">
     <script src="main.js"></script>
-    <style>
-    </style>
-
     <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
 </head>
 
@@ -34,121 +33,214 @@
         <a href="#no10">Help &amp; Documentaion</a>
     </div>
 
-<!-- 
-    <h1 id="top">Links To Sections Of The Same Page</h1>
-    <section>
-      <ul>
-      <li><a href="#no1">Visibiltiy Of System Status</a></li>
-      <li><a href="#no2">Match Between System &amp; Real World</a></li>
-      <li><a href="#no3">User Control &amp; Freedom</a></li>
-      <li><a href="#no4">Consistancy &amp; Standards</a></li>
-      <li><a href="#no5">Error Prevention</a></li>
-      <li><a href="#no6">Recognition Rather Than Recall</a></li>
-      <li><a href="#no7">Flexibility &amp; Efficiency Of Use</a></li>
-      <li><a href="#no8">Aesthetic &amp; minimalist design</a></li>
-      <li><a href="#no9">Help users recognise, diagnose, &amp; recover from errors</a></li>
-      <li><a href="#no10">Help &amp; Documentaion</a></li>
-      </ul>  
-    </section> -->
 
     <section id="no1">
-        <h3>Visibiltiy Of System Status</h3>
-       <p>
-        <img src= "https://usabilitygeek.com/wp-content/uploads/2016/05/heuristic-evaluation-04-visibility.jpg" width="500" height="300" alt="Picture">
-       
-       <div>&quot; The system should always keep users informed about what is going on, through appropriate
-                feedback within reasonable time.
-        The first of Jakob Nielsen’s ten heuristics — visibility of system status — relates to so much more than user-interface design. At its essence, it is about communication and transparency, which are critical to many aspects of life. People strive for predictability and control, and, in most cases, more information translates to better decision making.
-
-     Wherever you are, whatever you are doing, take a few moments to look around and note the various types of systems around you, and how they communicate their current status. Your phone or laptop display how much battery life remains; your email application tells you how many unread emails you have; a sign in the subway indicates the next stop (or, if you’ve missed the last one, how many minutes until the next train arrives at the station). All these nuggets of information allow you to accurately assess the current state of the systems you interact with.
-                
-    Definition: The visibility of system status refers to how well the state of the system is conveyed to its users. Ideally, systems should always keep users informed about what is going on, through appropriate feedback within reasonable time.&quot;</div>
-</p>
-    </section>
-
-    <section id="no2">
-        <h3>Match Between System &amp; Real World</h3>
+        <h3>VISIBILITY OF SYSTEM STATUS</h3>
         <p>
-            <img src="https://image.slidesharecdn.com/10usabilityheuristicsexplained-140903065750-phpapp02/95/10-usability-heuristics-explained-7-638.jpg?cb=1409788592" width="500" height="300" alt="Label">
-                <div>&quot;
+            <!-- <img src="https://usabilitygeek.com/wp-content/uploads/2016/05/heuristic-evaluation-04-visibility.jpg"
+                width="500" height="300" alt="Picture"> -->
+            Nielson's first heuristic : the system should always keep users informed about its current state.
+            When a user is aware of system states, he can actively change them, hence imparting him with control.
+        </p>
 
-               The system should speak the users' language, with words, phrases, and concepts familiar to the user, rather than system-oriented terms. Follow real-world conventions, making information appear in a natural and logical order.
-                
-                As UX professionals, we should never assume that our own interpretations and understanding of words or objects match those of our users. (You ≠ user, as it says on our T-shirts.) How we interpret the world around us depends on a variety of circumstantial and personal factors. Experiences we’ve had, items we’re familiar with, our beliefs, ideas, and values all contribute to how we infer meaning, and nuances in interpretation will often vary from individual to individual.&quot;</div>
+
+        <div class="wrapper">
+            <div class="progressbar">
+
+                <input class="progressbar__checker" type="radio" id="zero" name="progress-value">
+                <label class="progressbar__text" for="zero">0%</label>
+                <input class="progressbar__checker" type="radio" id="twenty-five" name="progress-value">
+                <label class="progressbar__text" for="twenty-five">25%</label>
+                <input class="progressbar__checker" type="radio" id="fifty" name="progress-value" checked>
+                <label class="progressbar__text" for="fifty">50%</label>
+                <input class="progressbar__checker" type="radio" id="seventy-five" name="progress-value">
+                <label class="progressbar__text" for="seventy-five">75%</label>
+                <input class="progressbar__checker" type="radio" id="hundred" name="progress-value">
+                <label class="progressbar__text" for="hundred">100%</label>
+
+                <div class="side side__front">
+                    <div class="side__fill"></div>
+                </div>
+                <div class="side side__back">
+                    <div class="side__fill"></div>
+                </div>
+                <div class="side side__top">
+                    <div class="side__fill"></div>
+                </div>
+                <div class="side side__bottom">
+                    <div class="side__fill"></div>
+                </div>
+                <div class="side side__left"></div>
+            </div>
+        </div>
+
+
+        <p>
+            To keep the user up to date on its status, a system should also be able to provide immediate feedback
+            to a user's actions. When I press a button, I expect the button to tell me that it has been pressed.
+            Deprived of responsiveness, a user will end up feeling helpless and frustrated.
         </p>
 
         
+        <div class="container">
+            <div class="row">
+                <span class="btn btn-small submit">I</span>
+                <span class="btn btn-small submit">Am</span>
+                <span class="btn btn-small submit">Giving</span>
+                <span class="btn btn-small submit">You</span>
+                <span class="btn btn-small submit">Feedback</span>
+            </div>
+            <div class="row">
+                <span class="btn btn-medium info">When</span>
+                <span class="btn btn-medium info">You</span>
+                <span class="btn btn-medium info">Press</span>
+            </div>
+            <div class="row">
+                <span class="btn btn-large cancel">Me</span>
+            </div>
+        </div>
+
+
+
+
+    </section>
+
+    <section id="no2">
+        <h3>MATCH BETWEEN SYSTEM &amp; REAL WORLD</h3>
+        <p>
+            <!-- <img src="https://image.slidesharecdn.com/10usabilityheuristicsexplained-140903065750-phpapp02/95/10-usability-heuristics-explained-7-638.jpg?cb=1409788592"
+                width="500" height="300" alt="Label"> -->
+
+            The system should speak the users' language, with words, phrases, and concepts familiar to the user,
+            rather than system-oriented terms. Follow real-world conventions, making information appear in a
+            natural and logical order.
+
+            As UX professionals, we should never assume that our own interpretations and understanding of words or
+            objects match those of our users. How we interpret the world
+            around us depends on a variety of circumstantial and personal factors. Experiences we’ve had, items
+            we’re familiar with, our beliefs, ideas, and values all contribute to how we infer meaning, and nuances
+            in interpretation will often vary from individual to individual.
+
+            <br />
+            <br />
+            The use of language is also imperative in a system. For example, in a seller's pages, the words
+            &quot;comment&quot; and &quot;feedback&quot; can mean very different things. If a customer's review for a
+            certain product is wanted, the word &quot;feedback&quot; would better suit
+            the system because &quot;comment&quot; can be misleading to the mainstream user terminology as it can mean
+            that the user can ask questions or interact with other users.
+
+            <br />
+            <br />
+            As such, generic terminologies should not be encouraged in any website
+
+
+        </p>
+
+
     </section>
 
     <section id="no3">
-        <h3>User Control &amp; Freedom</h3>
+        <h3>USER CONTROL &amp; FREEDOM</h3>
         <p>
-            <img src="https://image.slidesharecdn.com/10usabilityheuristicsexplained-140903065750-phpapp02/95/10-usability-heuristics-explained-10-638.jpg?cb=1409788592" width="500" height="300" alt="picture">
-           <div>&quot; Users often choose system functions by mistake and will need a clearly marked "emergency exit" to leave the unwanted state without having to go through an extended dialogue. Support undo and redo.&quot; </div>
+            <!-- <img src="https://image.slidesharecdn.com/10usabilityheuristicsexplained-140903065750-phpapp02/95/10-usability-heuristics-explained-10-638.jpg?cb=1409788592"
+                width="500" height="300" alt="picture"> -->
 
-           </p>
+            Users often choose system functions by mistake and will need a clearly marked "emergency exit"
+            to leave the unwanted state without having to go through an extended dialogue. For example, a popular
+            alternative is the &quot;undo&quot; button.
+            <br />
+            <br />
+
+            Another alternative would be to code the website such that when pressing a link, a new tab will be
+            automatically opened so that the user is free to visit the previous page by switching tabs, allowing the
+            user to experience freedom when navigating the website
+
+
+        </p>
     </section>
 
 
     <section id="no4">
-        <h3>Consistancy &amp; Standards</h3>
+        <h3>CONSISTENCY &amp; STANDARDS</h3>
         <p>Users should not have to wonder whether different words, situations, or actions mean the
-                same thing. Follow platform conventions.</p>
+            same thing. Follow platform conventions.</p>
     </section>
 
     <section id="no5">
-        <h3>Error Prevention</h3>
-        <p>One of the 10 Usability Heuristics advises that it’s important to communicate errors to users gracefully, actionably, and clearly. However, it’s even better to prevent users from making errors in the first place
+        <h3>ERROR PREVENTION</h3>
+        <p>One of the 10 Usability Heuristics advises that it’s important to communicate errors to users gracefully,
+            actionably, and clearly. However, it’s even better to prevent users from making errors in the first place
 
-                A crucial point in discussing user errors is where to assign the blame for the error. The term “user error” implies that the user is at fault for having done something wrong. Not so. The designer is at fault for making it too easy for the user to commit the error. Therefore, the solution to user errors is not to scold users, to ask them to try harder, or to give them more extensive training. The answer is to redesign the system to be less error prone.
+            A crucial point in discussing user errors is where to assign the blame for the error. The term “user error”
+            implies that the user is at fault for having done something wrong. Not so. The designer is at fault for
+            making it too easy for the user to commit the error. Therefore, the solution to user errors is not to scold
+            users, to ask them to try harder, or to give them more extensive training. The answer is to redesign the
+            system to be less error prone.
             <ul>
-            <li>Slips occur when users intend to perform one action, but end up doing another (often similar) action. For example, typing an “i” instead of an “o” counts as a slip; accidentally putting liquid hand soap on one’s toothbrush instead of toothpaste is also a slip. Slips are typically made when users are on autopilot, and when they do not fully devote their attention resources to the task at hand.</li>
-            <li>Mistakes are made when users have goals that are inappropriate for the current problem or task; even if they take the right steps to complete their goals, the steps will result in an error. For example, if I misunderstood the meaning of the oil-pressure warning light in my car, and thought it was the tire-pressure monitor, no matter how carefully I added air to my tires, it would not fix the issue with my oil pressure. This would be a mistake, since the goal that I was attempting to accomplish was inappropriate for the situation, even though I made no errors in executing my plan. Mistakes are conscious errors, and often (though not exclusively) arise when a user has incomplete or incorrect information about the task, and develops a mental model that doesn’t match how the interface actually works.</li>
+                <li>Slips occur when users intend to perform one action, but end up doing another (often similar)
+                    action. For example, typing an “i” instead of an “o” counts as a slip; accidentally putting liquid
+                    hand soap on one’s toothbrush instead of toothpaste is also a slip. Slips are typically made when
+                    users are on autopilot, and when they do not fully devote their attention resources to the task at
+                    hand.</li>
+                <li>Mistakes are made when users have goals that are inappropriate for the current problem or task;
+                    even if they take the right steps to complete their goals, the steps will result in an error. For
+                    example, if I misunderstood the meaning of the oil-pressure warning light in my car, and thought it
+                    was the tire-pressure monitor, no matter how carefully I added air to my tires, it would not fix
+                    the issue with my oil pressure. This would be a mistake, since the goal that I was attempting to
+                    accomplish was inappropriate for the situation, even though I made no errors in executing my plan.
+                    Mistakes are conscious errors, and often (though not exclusively) arise when a user has incomplete
+                    or incorrect information about the task, and develops a mental model that doesn’t match how the
+                    interface actually works.</li>
             </ul>
-            </p>
+        </p>
 
     </section>
 
 
     <section id="no6">
-        <h3>Recognition Rather Than Recall</h3>
-        <p>Minimize the user's memory load by making objects, actions, and options visible. The user
-                should not have to remember information from one part of the dialogue to another.
-                Instructions for use of the system should be visible or easily retrievable whenever
-                appropriate.</p>
+        <h3>RECOGNITION RATHER THAN RECALL</h3>
+        <!-- <img src="https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwjsg--zzarhAhUHrI8KHUogAUwQjRx6BAgBEAU&url=https%3A%2F%2Fsites.google.com%2Fa%2Fmail.usf.edu%2Fmymoney%2Fhow-it-works%2Fusability-heuristics%2Frecognition-rather-than-recall&psig=AOvVaw1vDEvDzspA8fHD1o43HqxR&ust=1554060702867531"
+                 width="500" height="300"> -->
+        <p>Minimize the user's memory load by making objects, actions, and options visible (Windows famous ribbon
+            logo). The user
+            should not have to remember information from one part of the dialogue to another.
+            Instructions for use of the system should be visible or easily retrievable whenever
+            appropriate.</p>
     </section>
 
     <section id="no7">
-        <h3>Flexibility &amp; Efficiency Of Use</h3>
+        <h3>FLEXIBILITY &amp; EFFICIENCY OF USE</h3>
         <p>Accelerators -- unseen by the novice user -- may often speed up the interaction for the expert
-                user such that the system can cater to both inexperienced and experienced users. Allow
-                users to tailor frequent actions.</p>
+            user such that the system can cater to both inexperienced and experienced users. Allow
+            users to tailor frequent actions.</p>
     </section>
 
     <section id="no8">
-        <h3>Aesthetic &amp; minimalist design</h3>
+        <h3>AESTHETIC &amp; MINIMALIST DESIGN</h3>
         <p>Dialogues should not contain information which is irrelevant or rarely needed. Every extra
-                unit of information in a dialogue competes with the relevant units of information and
-                diminishes their relative visibility.</p>
+            unit of information in a dialogue competes with the relevant units of information and
+            diminishes their relative visibility.</p>
     </section>
 
     <section id="no9">
-        <h3>Help users recognise, diagnose, &amp; recover from errors</h3>
+        <h3>HELP USERS RECOGNISE, DIAGNOSE, &amp; RECOVER FROM ERRORS</h3>
         <p>Error messages should be expressed in plain language (no codes), precisely indicate the
-                problem, and constructively suggest a solution.</p>
+            problem, and constructively suggest a solution.</p>
     </section>
 
 
     <section id="no10">
-        <h3>Help &amp; Documentaion</h3>
+        <h3>HELP &amp; DOCUMENTATION</h3>
         <p>Even though it is better if the system can be used without documentation, it may be
-                necessary to provide help and documentation. Any such information should be easy to
-                search, focused on the user's task, list concrete steps to be carried out, and not be too large.</p>
+            necessary to provide help and documentation. Any such information should be easy to
+            search, focused on the user's task, list concrete steps to be carried out, and not be too large.</p>
     </section>
-    
- 
+
+
     <p> BACK TO TOP: <a href="#top"> CLICK HERE</a></p>
-    <p>&copy; SMU</p>
+    <div>References from &copy; Neilson Norman Group </div>
+    <div>website made by Daniel Choi for webdevelopment practicing purposes</div>
 
 </body>
+
 </html>
